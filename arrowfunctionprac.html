@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  
+
+  <title>The Tech Academy Tic Tac Toe Game!</title>
+  <!--<meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel="stylesheet" type="text/css" href="css/game.css">-->
+</head>
+
+
+<body>
+
+<p id="displayCar"></p>
+<p id="displayAge"></p>
+
+<script>
+
+
+  var car;
+  car = (val) => "These are my favorite car brands: " + val;
+  document.getElementById('displayCar').innerHTML = car("Honda, Ford, and Telsa");
+  /*
+  var car
+  car = function(val) {
+    return "These are etc" + val;
+    document.getElById('id').innerHTML = car("1, 2, 3")
+  }
+  */
+ /*
+  var ages=[2, 4, 18, 20, 13, 15, 30];
+
+  checkAge = (age) => age >= 18;//should return true?
+
+  function myFunction() {
+    document.getElementById('displayAge').innerHTML = ages.some(checkAge);
+  }*/
+
+
+  const num = [1, 4, 15, 6, 29];
+  let someOver = num.some(myFunction);
+
+  document.getElementById("displayAge").innerHTML = "this is over " + someOver;
+
+  function myFunction(value, index, array) {
+    return value > 14;
+  }
+  
+  </script>
+</body>
+
+</body>
+</html>
